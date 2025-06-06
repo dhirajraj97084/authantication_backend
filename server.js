@@ -17,6 +17,9 @@ app.use(cors());
 
 // Routes
 app.use('/api', router);
+app.use('/',(req,res)=>{
+  res.json("hello bhaai how are you");
+})
 
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
